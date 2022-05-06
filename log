@@ -196,3 +196,15 @@ vi.,  6 de may. de 2022 11:47:49:
  tests:  0|0
 total_score: 35/70
 324cfed
+vi.,  6 de may. de 2022 11:55:17: 
+ heap.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+test.c:55:6: error: redefinition of 'view_array'
+ void view_array(Heap* h){
+      ^~~~~~~~~~
+In file included from test.c:4:0:
+heap.c:26:6: note: previous definition of 'view_array' was here
+ void view_array(Heap* h){
+      ^~~~~~~~~~
+Compilation failed
+8610afa
