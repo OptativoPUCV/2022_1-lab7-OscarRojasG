@@ -27,3 +27,22 @@ ju.,  5 de may. de 2022 23:21:04:
  tests:  2|2
 total_score: 20/70
 75bf050
+ju.,  5 de may. de 2022 23:29:36: 
+ heap.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+heap.c: In function 'heap_push':
+heap.c:29:21: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+       pq->heapArray = (Heap *) realloc(pq->heapArray, (pq->capac * 2) + 1);
+                     ^
+heap.c: In function 'createHeap':
+heap.c:44:35: error: too many arguments to function 'malloc'
+    heap->heapArray = (heapElem *) malloc(3, sizeof(heapElem));
+                                   ^~~~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:485:40: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *malloc (size_t) __MINGW_ATTRIB_MALLOC;
+                                        ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0c92005
