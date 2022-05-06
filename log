@@ -190,3 +190,9 @@ heap.c:39:5: note: previous implicit declaration of 'view_array' was here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 80f0f9f
+vi.,  6 de may. de 2022 11:47:49: 
+ heap.c | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+ tests:  0|0
+total_score: 35/70
+324cfed
