@@ -44,7 +44,7 @@ void heap_push(Heap* pq, void* data, int priority){
 
       aux = (aux - 1)/2;
 
-      printf("%d\n", tmp.priority);
+      printf("%d\n", aux);
    }
    
    pq->size++;

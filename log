@@ -142,3 +142,9 @@ vi.,  6 de may. de 2022 11:28:14:
  1 file changed, 2 insertions(+)
  tests:  0|2
 81e39ba
+vi.,  6 de may. de 2022 11:28:45: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 35/70
+4a5a9ce
