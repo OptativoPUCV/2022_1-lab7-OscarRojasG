@@ -166,3 +166,8 @@ heap.c:43:36: error: invalid type argument of unary '*' (have 'heapElem {aka str
                                     ^~~~
 Compilation failed
 839c234
+vi.,  6 de may. de 2022 11:37:50: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  6|0
+8e23a60
