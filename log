@@ -126,3 +126,8 @@ c:\mingw\include\stdlib.h:484:40: note: declared here
                                         ^~~~~~
 Compilation failed
 ff66ec7
+vi.,  6 de may. de 2022  0:16:02: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+651f017
