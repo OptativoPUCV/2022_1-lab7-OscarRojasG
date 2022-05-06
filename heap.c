@@ -43,8 +43,10 @@ void heap_push(Heap* pq, void* data, int priority){
       pq->heapArray[(aux - 1)/2] = tmp;
 
       aux = (aux - 1)/2;
-   }
 
+      printf("%d\n", tmp.priority);
+   }
+   
    pq->size++;
 }
 
