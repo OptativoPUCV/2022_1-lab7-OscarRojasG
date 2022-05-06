@@ -171,3 +171,22 @@ vi.,  6 de may. de 2022 11:37:50:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  6|0
 8e23a60
+vi.,  6 de may. de 2022 11:41:00: 
+ heap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+heap.c: In function 'heap_push':
+heap.c:39:5: error: implicit declaration of function 'view_array' [-Werror=implicit-function-declaration]
+     view_array(pq);
+     ^~~~~~~~~~
+test.c: At top level:
+test.c:55:6: error: conflicting types for 'view_array' [-Werror]
+ void view_array(Heap* h){
+      ^~~~~~~~~~
+In file included from test.c:4:0:
+heap.c:39:5: note: previous implicit declaration of 'view_array' was here
+     view_array(pq);
+     ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+80f0f9f
