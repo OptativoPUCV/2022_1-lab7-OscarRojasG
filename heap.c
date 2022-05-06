@@ -23,21 +23,12 @@ void* heap_top(Heap* pq){
 }
 
 
-void view_array2(Heap* h){
-    int i;
-    printf("\t[");
-    for(i=0; i<h->size; i++){
-        printf("%d ",h->heapArray[i].priority);
-    }
-    printf("]\n");
-}
 void heap_push(Heap* pq, void* data, int priority){
    if(pq->size == pq->capac)
    {
       pq->heapArray = (heapElem *) realloc(pq->heapArray, ((pq->capac * 2) + 1) * sizeof(heapElem));
       pq->capac = (pq->capac * 2) + 1;
    }
-   view_array2(pq);
    pq->heapArray[pq->size].data = data;
    pq->heapArray[pq->size].priority = priority;
 
