@@ -153,3 +153,16 @@ vi.,  6 de may. de 2022 11:30:52:
  1 file changed, 3 insertions(+), 5 deletions(-)
  tests:  0|0
 7341c15
+vi.,  6 de may. de 2022 11:37:28: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+heap.c: In function 'heap_push':
+heap.c:41:7: error: invalid type argument of unary '*' (have 'heapElem {aka struct nodo}')
+       *tmp = pq->heapArray[aux];
+       ^~~~
+heap.c:43:36: error: invalid type argument of unary '*' (have 'heapElem {aka struct nodo}')
+       pq->heapArray[(aux - 1)/2] = *tmp;
+                                    ^~~~
+Compilation failed
+839c234
