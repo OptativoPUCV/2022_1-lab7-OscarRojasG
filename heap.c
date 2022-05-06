@@ -34,7 +34,7 @@ void view_array2(Heap* h){
 void heap_push(Heap* pq, void* data, int priority){
    if(pq->size == pq->capac)
    {
-      pq->heapArray = (heapElem *) realloc(pq->heapArray, (pq->capac * 2) + 1);
+      pq->heapArray = (heapElem *) realloc(pq->heapArray, ((pq->capac * 2) + 1) * sizeof(heapElem));
       pq->capac = (pq->capac * 2) + 1;
    }
    view_array2(pq);
