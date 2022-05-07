@@ -86,6 +86,8 @@ void heap_pop(Heap* pq){
 Heap* createHeap(){
    Heap *heap = (Heap *) malloc(sizeof(Heap));
    heap->heapArray = (heapElem *) calloc(3, sizeof(heapElem));
+   printf("\n%d\n", heap->heapArray[0].priority);
+   printf("\n%d\n", heap->heapArray[1].priority);
    printf("\n%d\n", heap->heapArray[2].priority);
    heap->size = 0;
    heap->capac = 3;
