@@ -17,11 +17,11 @@ typedef struct Heap{
 } Heap;
 
 
-void swap(void *a, void *b)
+void swap(heapElem *a, heapElem *b)
 {
-   void *tmp = a;
-   a = b;
-   b = tmp;
+   heapElem tmp = *a;
+   *a = *b;
+   *b = tmp;
 }
 
 void* heap_top(Heap* pq){

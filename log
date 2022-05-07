@@ -268,3 +268,9 @@ sá.,  7 de may. de 2022 14:42:25:
  tests:  4|1
 total_score: 50/70
 beee969
+sá.,  7 de may. de 2022 14:46:33: 
+ heap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  8|0
+total_score: 70/70
+165c0e1
