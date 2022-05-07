@@ -274,3 +274,14 @@ sá.,  7 de may. de 2022 14:46:33:
  tests:  8|0
 total_score: 70/70
 165c0e1
+sá.,  7 de may. de 2022 15:06:38: 
+ heap.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+In file included from test.c:4:0:
+heap.c: In function 'heap_pop':
+heap.c:60:13: error: unused variable 'tmp' [-Werror=unused-variable]
+    heapElem tmp;
+             ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8ed08cb
