@@ -285,3 +285,9 @@ heap.c:60:13: error: unused variable 'tmp' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 8ed08cb
+sá.,  7 de may. de 2022 15:06:53: 
+ heap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  8|0
+total_score: 70/70
+0fb559d
