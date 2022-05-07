@@ -17,6 +17,13 @@ typedef struct Heap{
 } Heap;
 
 
+void swap(void *a, void *b)
+{
+   void *tmp = a;
+   a = b;
+   b = tmp;
+}
+
 void* heap_top(Heap* pq){
    if(pq->size == 0) return NULL;
    return pq->heapArray[0].data;
@@ -26,27 +33,17 @@ void* heap_top(Heap* pq){
 void heap_push(Heap* pq, void* data, int priority){
    if(pq->size == pq->capac)
    {
-      pq->heapArray = (heapElem *) realloc(pq->heapArray, ((pq->capac * 2) + 1) * sizeof(heapElem));
-      pq->capac = (pq->capac * 2) + 1;
+      pq->heapArray = (heapElem *) realloc(pq->heapArray, ((pq->capac*2+1) * sizeof(heapElem)));
+      pq->capac = pq->capac*2+1;
    }
    pq->heapArray[pq->size].data = data;
    pq->heapArray[pq->size].priority = priority;
 
    int aux = pq->size;
-   void *tmp_data;
-   int tmp_priority;
-   while(aux != 0 && pq->heapArray[aux].priority > pq->heapArray[(aux - 1)/2].priority)
+   while(aux != 0 && pq->heapArray[aux].priority > pq->heapArray[(aux-1)/2].priority)
    {
-      tmp_data = pq->heapArray[aux].data;
-      tmp_priority = pq->heapArray[aux].priority;
-
-      pq->heapArray[aux].data = pq->heapArray[(aux - 1)/2].data;
-      pq->heapArray[aux].priority = pq->heapArray[(aux - 1)/2].priority;
-
-      pq->heapArray[(aux - 1)/2].data = tmp_data;
-      pq->heapArray[(aux - 1)/2].priority = tmp_priority;
-
-      aux = (aux - 1)/2;
+      swap(&pq->heapArray[aux], &pq->heapArray[(aux-1)/2]);
+      aux = (aux-1)/2;
    }
    
    pq->size++;
