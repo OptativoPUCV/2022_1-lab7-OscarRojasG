@@ -52,6 +52,7 @@ void heap_push(Heap* pq, void* data, int priority){
       }
 
       swap(pq->heapArray, pos, parentPos);
+      printf("%d\n", pq->heapArray[pos].priority);
       pos = parentPos;
    }
 
