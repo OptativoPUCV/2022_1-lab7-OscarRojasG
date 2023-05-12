@@ -63,24 +63,22 @@ void heap_pop(Heap* pq) {
    while(1) {
       int posLeft = 2 * pos + 1; 
       int posRight = 2 * pos + 2;
+      int posMayor;
 
       if (posLeft > pq->size) break;
-      
-      if (pq->heapArray[posLeft].priority >= pq->heapArray[posRight].priority) {
-         if (pq->heapArray[posLeft].priority > pq->heapArray[pos].priority) {
-            swap(pq->heapArray, pos, posLeft);
-            pos = posLeft;
-         }
-      } 
-      else {
-         if (pq->heapArray[posRight].priority > pq->heapArray[pos].priority) {
-            swap(pq->heapArray, pos, posRight);
-            pos = posRight;
-         } 
-         else {
-            break;
-         }
+
+      if (pq->heapArray[posLeft].priority > pq->heapArray[posRight].priority) {
+         posMayor = posLeft;
+      } else {
+         posMayor = posRight;
       }
+      
+      if (pq->heapArray[pos].priority >= pq->heapArray[posMayor].priority) {
+         break;
+      } 
+
+      swap(pq->heapArray, pos, posMayor);
+      pos = posMayor;
    }
 
 }
