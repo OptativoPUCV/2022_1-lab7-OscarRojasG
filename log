@@ -49,3 +49,9 @@ jue., 11 de may. de 2023 23:54:18:
  tests:  2|0
    [ INFO ] insertando dato con prioridad 7
 f8a3775
+jue., 11 de may. de 2023 23:55:23: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|2
+total_score: 20/70
+a7ba360
