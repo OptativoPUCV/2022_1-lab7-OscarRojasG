@@ -27,3 +27,14 @@ jue., 11 de may. de 2023 23:06:11:
  tests:  2|2
 total_score: 20/70
 bfaa10c
+jue., 11 de may. de 2023 23:52:42: 
+ heap.c | 30 ++++++++++++++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+In file included from test.c:4:0:
+heap.c: In function 'heap_push':
+heap.c:40:21: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+       pq->heapArray = (Heap *) realloc(pq->heapArray, pq->capac);
+                     ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+acb6520
