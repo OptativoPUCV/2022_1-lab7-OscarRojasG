@@ -21,3 +21,9 @@ jue., 11 de may. de 2023 23:04:44:
  tests:  1|3
 total_score: 10/70
 c0c1285
+jue., 11 de may. de 2023 23:06:11: 
+ heap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  2|2
+total_score: 20/70
+bfaa10c
