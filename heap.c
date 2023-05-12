@@ -23,15 +23,9 @@ void* heap_top(Heap* pq){
 }
 
 void swap(heapElem* array, int pos1, int pos2) {
-   heapElem aux;
-   aux.data = array[pos1].data;
-   aux.priority = array[pos1].priority;
-
-   array[pos1].data = array[pos2].data;
-   array[pos1].priority = array[pos2].priority;
-
-   array[pos2].data = aux.data;
-   array[pos2].priority = aux.priority;
+   heapElem aux = array[pos1];
+   array[pos1] = array[pos2]; 
+   array[pos2] = aux;
 }
 
 void heap_push(Heap* pq, void* data, int priority){
@@ -52,7 +46,6 @@ void heap_push(Heap* pq, void* data, int priority){
       }
 
       swap(pq->heapArray, pos, parentPos);
-      printf("%d %d\n", pq->heapArray[pos].priority, pq->heapArray[parentPos].priority);
       pos = parentPos;
    }
 
