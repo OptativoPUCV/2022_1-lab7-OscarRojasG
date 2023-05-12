@@ -71,14 +71,12 @@ void heap_pop(Heap* pq) {
          posMayor = posRight;
       }
 
-      if (pq->heapArray[pos].priority >= pq->heapArray[posMayor].priority) {
+      if (posMayor >= pq->size || pq->heapArray[pos].priority >= pq->heapArray[posMayor].priority) {
          break;
       }
 
       swap(pq->heapArray, pos, posMayor);
       pos = posMayor;
-
-      if (pos >= pq->size) break;
    }
 
 }
