@@ -58,6 +58,7 @@ void heap_pop(Heap* pq) {
    swap(pq->heapArray, 0, pq->size);
 
    int pos = 0;
+   pq->size--;
 
    while(1) {
       int posLeft = 2 * pos + 1; 
