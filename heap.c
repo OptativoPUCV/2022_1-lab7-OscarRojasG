@@ -65,13 +65,15 @@ void heap_pop(Heap* pq) {
       int posRight = 2 * pos + 2;
       int posMayor;
 
+      if (posLeft >= pq->size) break;
+
       if (pq->heapArray[posLeft].priority >= pq->heapArray[posRight].priority) {
          posMayor = posLeft;
       } else {
          posMayor = posRight;
       }
 
-      if (posMayor >= pq->size || pq->heapArray[pos].priority >= pq->heapArray[posMayor].priority) {
+      if (pq->heapArray[pos].priority >= pq->heapArray[posMayor].priority) {
          break;
       }
 
