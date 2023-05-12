@@ -73,9 +73,9 @@ void heap_pop(Heap* pq) {
                pq->heapArray[posRight].priority > pq->heapArray[posLeft].priority) {
             swap(pq->heapArray, pos, posRight);
             pos = posRight;
+      } else {
+         break;
       }
-
-      break;
    }
 }
 
