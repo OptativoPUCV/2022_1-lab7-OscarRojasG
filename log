@@ -55,3 +55,8 @@ jue., 11 de may. de 2023 23:55:23:
  tests:  2|2
 total_score: 20/70
 a7ba360
+jue., 11 de may. de 2023 23:56:27: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|0
+6d88d8d
