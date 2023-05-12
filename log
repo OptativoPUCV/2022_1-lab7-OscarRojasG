@@ -60,3 +60,8 @@ jue., 11 de may. de 2023 23:56:27:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  6|0
 6d88d8d
+jue., 11 de may. de 2023 23:58:34: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|0
+659cc28

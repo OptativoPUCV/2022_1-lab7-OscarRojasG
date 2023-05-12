@@ -25,7 +25,7 @@ void* heap_top(Heap* pq){
 void swap(heapElem* array, int pos1, int pos2) {
    heapElem aux;
    aux.data = array[pos1].data;
-   aux.priority = array[pos2].priority;
+   aux.priority = array[pos1].priority;
 
    array[pos1].data = array[pos2].data;
    array[pos1].priority = array[pos2].priority;
